@@ -23,10 +23,12 @@
     line-height: 52px; /*垂直居中*/
     border-radius: 20px 20px 20px 20px;/*圆角*/
     text-align: center;
-    background: linear-gradient(rgb(52, 181, 255),rgb(255, 255, 255));
+    background-color: #007BFF; /* 背景颜色为蓝色 */
     color: white;
     cursor: pointer; 
     user-select: none;
+    margin: 0 auto; /* 水平居中 */
+    position: relative; /* 相对定位 */
 }
 .todoinput
 { 
@@ -38,6 +40,8 @@
     width: 60%;
     height: 50px;
     border-radius: 20px 20px 20px 20px;
+    margin: 0 auto; /* 水平居中 */
+    position: relative; /* 相对定位 */
 
 }
 .todo-form{
@@ -49,16 +53,15 @@ body{
     background: linear-gradient(to right,rgb(113,65,168), rgb(44,114,251,1)
     );
 }   
-.todo-app{
-    width: 98%;
-    height: 500px;
-    padding-top: 30px;
-    box-sizing: border-box;
-    background-color: #ffff;
-    border-radius: 5px;
-    margin-top: 40px;
-    margin-left: 1%;
-
+.todo-app {
+    width: 98%; /* 宽度为视口宽度的98% */
+    height: 75vh; /* 高度为视口高度的70% */
+    padding-top: 30px; /* 顶部内边距为30px */
+    box-sizing: border-box; /* 包括内边距和边框在内的宽度和高度 */
+    background-color: #ffff; /* 背景颜色为白色 */
+    border-radius: 5px; /* 边框圆角半径为5px */
+    margin-top: 40px; /* 顶部外边距为40px */
+    margin-left: 1%; /* 左侧外边距为1% */
 }
 .title{
     font-size: 30px;
@@ -67,3 +70,5 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+
+        
