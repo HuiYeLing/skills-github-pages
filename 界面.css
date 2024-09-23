@@ -14,15 +14,15 @@
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
 }
-.todo-button{
+.todo-button {
     width: 100px;
     height: 52px;
-    line-height: 52px; /*垂直居中*/
-    border-radius: 20px 20px 20px 20px;/*圆角*/
+    line-height: 52px; /* 垂直居中 */
+    border-radius: 20px 20px 20px 20px; /* 圆角 */
     text-align: center;
-    background-color: #007BFF; /* 背景颜色为蓝色 */
+    background-color: rgba(251, 251, 251, 0.61); /* 背景颜色为蓝色，透明度为0.5 */
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
     user-select: none;
     margin: 0 auto; /* 水平居中 */
     position: relative; /* 相对定位 */
@@ -39,6 +39,7 @@
     border-radius: 20px 20px 20px 20px;
     margin: 0 auto; /* 水平居中 */
     position: relative; /* 相对定位 */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* 背景颜色为浅灰色，透明度为0.8 */
 
 }
 .todo-form{
@@ -83,11 +84,13 @@
 
 /* 圆角方框样式 */
 .rounded-box {
-    width: 20%; /* 宽度为80% */
-    margin: 20%; /* 上下外边距为20px，水平居中 */
-    padding: 20px; /* 内边距为20px */
-    border-radius: 15px; /* 边框圆角半径为15px */
+    width: 15%; /* 宽度为80% */
+    margin: 2%; /* 上下外边距为20px，水平居中 */
+    padding: 6%; /* 内边距为20px */
+    border-radius: 15%; /* 边框圆角半径为15px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 100); /* 添加阴影效果 */
     text-align: center; /* 文本居中 */
     background-color: transparent; /* 背景颜色为完全透明 */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
