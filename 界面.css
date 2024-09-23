@@ -20,8 +20,8 @@
 .todo-button{
     width: 100px;
     height: 52px;
-    line-height: 52px;
-    border-radius: 20px 20px 20px 20px;
+    line-height: 52px; /*垂直居中*/
+    border-radius: 20px 20px 20px 20px;/*圆角*/
     text-align: center;
     background: linear-gradient(rgb(52, 181, 255),rgb(255, 255, 255));
     color: white;
