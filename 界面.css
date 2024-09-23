@@ -58,7 +58,7 @@ body{
     height: 75vh; /* 高度为视口高度的70% */
     padding-top: 30px; /* 顶部内边距为30px */
     box-sizing: border-box; /* 包括内边距和边框在内的宽度和高度 */
-    background-color: #ffff; /* 背景颜色为白色 */
+    background-color: transparent; /* 背景颜色为完全透明 */
     border-radius: 5px; /* 边框圆角半径为5px */
     margin-top: 40px; /* 顶部外边距为40px */
     margin-left: 1%; /* 左侧外边距为1% */
@@ -69,6 +69,25 @@ body{
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
+    color: white;
+}
+.rounded-box {
+    width: 10%; /* 宽度为80% */
+    margin: 10%; /* 外边距为40% */
+    padding: 10%; /* 内边距为20px */
+    background-color: transparent; /* 背景颜色为完全透明 */
+    border-radius: 15px; /* 边框圆角半径为15px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* 添加阴影效果 */
+    text-align: center; /* 文本居中 */
 }
 
-        
+/* 视频背景样式 */
+#bg-video {
+    position: fixed; /* 固定定位 */
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左侧对齐 */
+    width: 100%; /* 宽度为100% */
+    height: 100%; /* 高度为100% */
+    object-fit: cover; /* 覆盖整个容器 */
+    z-index: -1; /* 置于最底层 */
+}
