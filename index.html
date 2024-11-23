@@ -11,22 +11,41 @@
         <source src="资源/v-11.mp4" type="video/mp4"> 
     </video>
 
-    <div class="todo-app"> 
-        <div class="title">欢迎光临</div>
-        <div class="todo-form">
-            <input class="todoinput" type="text" placeholder="请输入"/>
-            <div class="todo-button">确认</div>
-        </div> 
-
-        <div class="rounded-box">
-            这是一个带有圆角的方框。
-        </div>
-    
-        <div class="rounded-box">
-            这是一个带有圆角的方框。
-        </div>
-        
-        </div>       
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">主页</a>
+        <a href="#">关于</a>
+        <a href="#">联系</a>
     </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ 侧边栏</button>  
+        <div class="card-container">
+            <a href="链接1.html" class="card">
+                <h2>卡片标题 1</h2>
+                
+            </a>
+            <a href="链接2.html" class="card">
+                <h2>卡片标题 2</h2>
+               
+            </a>
+            <a href="链接3.html" class="card">
+                <h2>卡片标题 3</h2>
+                
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px"; // 设置侧边栏的宽度
+            document.getElementById("main").style.marginLeft = "250px"; // 设置主页面的左边距
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0"; // 关闭侧边栏
+            document.getElementById("main").style.marginLeft= "0"; // 恢复主页面的左边距
+        }
+    </script>
 </body>
 </html>
